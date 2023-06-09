@@ -29,9 +29,8 @@ jobs:
     - name: Publish
       run: dotnet publish -c Release -o website
     - name: Upload artifact for deployment job
-      uses: actions/upload-artifact@v3.1.2
+      uses: actions/upload-artifact@v2.3.1
       with:
         name: webapp
         path: webapp/**
         if-no-files-found: warn
-        
